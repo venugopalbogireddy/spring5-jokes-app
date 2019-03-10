@@ -11,9 +11,13 @@ public class JavaServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JavaServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JavaServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
+
+    //    public JavaServiceImpl() {
+//        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+//    }
 
     @Override
     public String getJoke() {
